@@ -1,0 +1,129 @@
+<html>
+
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="../js/calculos.js"></script>
+
+</head>
+
+<body>
+	<div class="tudo"></div>
+	<section class="pgcalorias">
+
+		<div class="caloriasp">
+			<form>
+				<label>Digite a Quantidade de proteinas:</label><br>
+				<input type="text" name="quantidadeproteina"><br>
+				<button class="bt_calcular" type="button" onclick="proteinas()">calcular</button>
+				<button class="bt_limpar" type="reset">Limpar</button>
+			</form>
+			<div id="recebep">
+			</div>
+		</div>
+
+
+
+		<div class="caloriasc">
+			<form>
+				<label>Digite a Quantidade de Carboidratos:</label><br>
+				<input type="text" name="quantidadecarboidrato"><br>
+				<button class="bt_calcular" type="button" onclick="carboidratos()">calcular</button>
+				<button class="bt_limpar" type="reset">Limpar</button>
+			</form>
+			<div id="recebec">
+
+			</div>
+		</div>
+
+
+
+
+		<div class="caloriasg">
+			<form>
+				<label>Digite a Quantidade de Gordura:</label><br>
+				<input type="text" name="quantidadegordura"><br>
+				<button class="bt_calcular" type="button" onclick="gorduras()">calcular</button>
+				<button class="bt_limpar" type="reset">Limpar</button>
+			</form>
+			<div id="recebeg">
+
+			</div>
+		</div>
+
+
+
+		<div class="caloriastotal">
+			<form>
+				<label>Calorias Totais:</label><br>
+				<button class="bt_calcular" type="button" onclick="calctudo()">calcular</button>
+
+
+			</form>
+			<div id="recebetotal">
+
+			</div>
+		</div>
+	</section>
+
+	<div class="divisão">
+		<h3>Validação se esta na Media e verificar quantidade de carboidratos de cada alimento </h3>
+	</div>
+	<section class="condicionais">
+
+		<div id="vld">
+			<form>
+				<label>Digite a Sua Idade:</label><br>
+				<input type="number" name="idade"><br>
+				<label>Selecione seu sexo:</label><br>
+				<input type="radio" name="sexo" value="Feminino" />Feminino
+				<input type="radio" name="sexo" value="Masculino" /> Masculino <br>
+				<button class="bt_calcular" type="button" onclick="validar()">calcular</button>
+				<button class="bt_limpar" type="reset">Limpar</button>
+			</form>
+			<div id="printvalidacao"></div>
+		</div>
+
+
+		<div id="listacarbo">
+			<h6>Quantidade a cada 100 GR</h6>
+			<form>
+				<input type="radio" name="carb" value="28" /> Arroz<br>
+				<input type="radio" name="carb" value="12" /> Batata inglesa<br>
+				<input type="radio" name="carb" value="94" /> Tapioca<br>
+				<input type="radio" name="carb" value="66" /> Aveia<br>
+				<input type="radio" name="carb" value="30" /> Mandioca<br>
+				<input type="radio" name="carb" value="19,6" /> Mandioquinha<br>
+				<input type="radio" name="carb" value="30,86" /> Macarrao<br>
+				<input type="radio" name="carb" value="18" /> Batata Doce<br>
+				<input type="radio" name="carb" value="48" /> Pão integral<br>
+				<button class="bt_calcular" type="button" onclick="valorcarb()">Verificar</button>
+				<button class="bt_limpar" type="reset">Limpar</button>
+			</form>
+			<div id="printqtdcarbo">
+
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+
+
+</body>
+
+</html>

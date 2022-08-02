@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+ /* inicio css da pagina calculo_calorias*/
+
+ .pgcalorias{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #faf5f5;
+   
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+ }
+ .caloriasp , .caloriasc , .caloriasg{
+	width: 350px;
+	height: 240px;
+	padding: px;
+	margin-bottom: 2px;
+	color: rgb(10, 10, 10);
+    margin-left:auto;
+    margin-right: auto; 
+    text-transform: uppercase;
+    border: #000000 1px solid;
+}
+
+.caloriastotal{
+    width: 350px;
+	height: 240px;
+	
+	color: rgb(10, 10, 10);
+    margin-left:auto;
+    margin-right: auto;
+    border: #000000 1px solid;
+    text-transform: uppercase;
+   
+}
+
+.bt_calcular{
+    width: 95px;
+    color: rgb(7, 7, 7);
+    background-color: rgb(1, 232, 248);
+    text-transform: uppercase;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.bt_limpar{
+    width: 95px;
+    color: rgb(7, 7, 7);
+    background-color:rgb(1, 232, 248);
+    text-transform: uppercase;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+#recebep , #recebec , #recebeg{
+    margin-top: 2px;
+    width: 95%;
+	height: 110px;
+    background-color: #0b2452;
+	float: left;
+	margin-left: 5px; margin-right: 5px;
+	text-align: justify-all;
+	color: rgb(238, 247, 248);
+    
+}
+
+#recebetotal{
+    margin-top: 10%;
+    width: 95%;
+	height: 110px;
+    background-color: #0b2452;
+	float: left;
+	margin-left: 5px; margin-right: 1px;
+	text-align: justify-all;
+	color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+.condicionais{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(5, 2, 2);
+    padding-bottom: 20px;
+  
+}
+
+#vld{
+    margin-left:auto;
+    margin-right: auto; 
+
+    width: 250px;
+    height: 400px;
+    color: rgb(5, 5, 5);
+    text-transform: uppercase;
+    background-color: #f5efef;
+  
+}
+
+#printvalidacao{
+    margin-top: 30px;
+    width: 95%;
+	height: 110px;
+    background-color: #0b2452;
+	float: left;
+	margin-left: 5px; margin-right: 1px;
+	text-align: justify-all;
+	color: white;
+
+}
+
+.validacao{
+	width: 250px;
+	height: 100px;
+	background-color: black;
+	float: left;
+	margin-left: 5px;
+	text-align: justify-all;
+	color: rgb(252, 250, 244);
+}
+
+
+
+
+#listacarbo{
+    margin-left: 5px;
+        width: 250px;
+        height: 400px;
+        color: black;
+        text-transform: uppercase;
+        background-color: rgb(250, 243, 243);
+        margin-left:auto;
+        margin-right: auto; 
+    }
+
+    #listacarbo:first-line{
+        color: rgb(14, 13, 13);
+        
+    }
+
+    #printqtdcarbo{
+       
+        width: 250px;
+        height: 50px;
+        color: rgb(248, 248, 248);
+        background-color: #0b2452;
+    }
+
+.divisão{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(5, 2, 2);
+   
+   
+}
+
+/* inicio breakpoint calculo_calorias.html*/
+@media only screen and (max-width:480px){
+    #vld, #listacarbo{
+   width: 85%;
+   margin-bottom: 5px;
+   
+    
+    }
+    
+}
+@media only screen and (max-width:480px){
+    .card-body{
+   width: 25%;
+  
+    
+    }
+    
+}
+
+
+@media only screen and (max-width:480px){
+    .caloriasp , .caloriasc , .caloriasg, .caloriastotal{
+   width: 85%;
+   margin-top: 2px;
+   margin-bottom: 2px;
+    
+    }
+    
+}
+
+@media only screen and (max-width:480px){
+    .condicionais, .pgcalorias {
+       width: 100%;
+
+    
+    }
+    
+}
+/* ajustes pra dispositivos menores sobre.html*/
+@media only screen and (max-width:480px){
+    .navegacao{
+       display: none;
+
+    
+    }
+    
+}
+@media only screen and (max-width:480px){
+    .descricao{
+       text-align: left;
+    color: rgb(14, 14, 15);
+    }
+    
+}
